@@ -1,0 +1,15 @@
+# Ignore directories
+downloads/
+uploads/
+chromedriver_win32/
+Win_948375_chrome-win/
+video_demo/
+__pycache__/
+
+# Ignore specific zip files
+chromedriver_win32.zip
+Win_948375_chrome-win.zip
+
+# Ignore log files
+timestamp_log.csv
+upload_log.csv
