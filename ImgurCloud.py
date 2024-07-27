@@ -213,7 +213,6 @@ class ImgurCloud:
                 o_contents = response.read()
             with open(s_save_path, 'wb') as file:
                 file.write(o_contents)
-            print(f'Image downloaded and saved to {s_save_path}')
         except urllib.error.HTTPError as e:
             print(f'HTTP Error: {e.code} - {e.reason}')
         except urllib.error.URLError as e:
