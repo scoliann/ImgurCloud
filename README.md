@@ -7,7 +7,7 @@ After doing a steganography project, I began to wonder... Hey!  Why not just hos
 Well, such a thing is possible!
 
 ## Demo
-A brief video demonstrating how to run this project can be found [here](www.youtube.com)!
+A brief video demonstrating how to run this project can be found [here](https://youtu.be/-gCJzaH8p3E)!
 
 ## Overview
 The functionality provided is pretty simple, on the upload side:

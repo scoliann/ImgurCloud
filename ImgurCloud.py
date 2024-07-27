@@ -66,9 +66,12 @@ class ImgurCloud:
         # Set webdriver parameters
         o_option = webdriver.ChromeOptions()
         o_option.binary_location = 'browser\Win_948375_chrome-win\chrome-win\chrome.exe'
-        o_option.add_experimental_option("excludeSwitches", ["enable-automation"])
+        o_option.add_experimental_option('excludeSwitches', ['enable-automation'])
         o_option.add_experimental_option('useAutomationExtension', False)
         o_option.add_argument('--disable-blink-features=AutomationControlled')
+        o_option.add_argument('--ignore-certificate-errors')
+        o_option.add_argument('--allow-insecure-localhost')
+        o_option.add_argument('--ignore-ssl-errors=yes')
         if b_headless:
             o_option.headless = True
 
@@ -157,7 +160,7 @@ class ImgurCloud:
             cv2.imwrite(s_img_w_payload_subset_path, na_img)
 
             # Upload image and get url
-            s_prior_img_url = self._upload(s_img_w_payload_subset_path, b_headless=False)
+            s_prior_img_url = self._upload(s_img_w_payload_subset_path, b_headless=True)
 
             # Record upload timestamp
             dt_timestamp = datetime.utcnow()
